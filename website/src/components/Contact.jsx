@@ -1,12 +1,16 @@
-import React from "react";
-function Contact() {
+import React from 'react';
+
+const Contact = () => {
   return (
-    <div className="contact">
+    <section className="contact">
       <h2>Contact Us</h2>
-      <p>Address: Tridevi Marg, Thamel, Kathmandu, Nepal</p>
-      <p>Email: info@himalayanjava.com</p>
-      <p>Phone: +977-01-4435171</p>
-    </div>
+      <div className="contact-info">
+        <p>Email: info@himalayanjava.com</p>
+        <p>Phone: +977-1-4435171</p>
+        <p>Address: Tridevi Marg, Thamel, Kathmandu, Nepal</p>
+      </div>
+    </section>
   );
-}
+};
+
 export default Contact;

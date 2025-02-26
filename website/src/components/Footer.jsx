@@ -1,10 +1,11 @@
-import React from "react";
-function Footer() {
+import React from 'react';
+
+const Footer = () => {
   return (
     <footer className="footer">
-      <p>Copyright © 2021 Himalayan Java. All rights reserved.</p>
+      <p>&copy; 2023 Himalayan Java Coffee. All rights reserved.</p>
     </footer>
   );
-}
+};
+
 export default Footer;
-// The Footer component is a simple functional component that renders a footer element with a paragraph element inside. The paragraph element contains a copyright notice. This component is imported and used in the App component to render the footer at the bottom of the page.
