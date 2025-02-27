@@ -4,7 +4,12 @@ const Header = ({ scrollToSection }) => {
   return (
     <header className="header">
       {/* Background Image Space */}
-      <div className="col-md-6">
+      <div className="head-bg">
+        <img src="/images/head-bg.jpg" alt="Coffee Background" />
+      </div>
+
+      {/* Background Image Space */}
+      <div className="header-image">
         <img src="/images/header.jpg" alt="Coffee Background" />
       </div>
 

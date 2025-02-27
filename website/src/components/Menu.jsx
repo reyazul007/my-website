@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 
 const menuItems = [
   { name: "Americano", price: 150, image: "/images/americano.jpg" },
@@ -19,26 +19,34 @@ const menuItems = [
 ];
 
 const Menu = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const handleViewAllClick = () => {
+    setShowAll(!showAll);
+  };
+
+  const itemsToShow = showAll ? menuItems : menuItems.slice(0, 10);
+
   return (
     <section id="menu" className="menu">
-      <h2>Menu</h2>
-      <p>
+      <h2 className="menu-title">Menu</h2>
+      <p className="menu-description">
         While most of the food in our menu changes from kitchen to kitchen and from cook to cook, what remains the same is our product from the bakery.
       </p>
-      <button className="view-all-button">View All</button>
       <div className="menu-items">
-        {menuItems.map((item, index) => (
+        {itemsToShow.map((item, index) => (
           <div key={index} className="menu-card">
-            <div className="menu-card-image">
-              <img src={item.image} alt={item.name} />
-            </div>
+            <img src={item.image} alt={item.name} className="menu-card-image" />
             <div className="menu-card-content">
-              <h3>{item.name}</h3>
-              <p>Rs {item.price}</p>
+              <h3 className="menu-card-title">{item.name}</h3>
+              <p className="menu-card-price">Rs {item.price}</p>
             </div>
           </div>
         ))}
       </div>
+      <button className="view-all-button" onClick={handleViewAllClick}>
+        {showAll ? "Show Less" : "View All"}
+      </button>
     </section>
   );
 };
