@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <h2>Contact Us</h2>
       <div className="contact-info">
         <p>Email: info@himalayanjava.com</p>
