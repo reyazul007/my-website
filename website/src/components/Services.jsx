@@ -60,7 +60,7 @@ const Services = () => {
       <div className="contact-section">
         <h3>Contact Us</h3>
         <p>For more information about our services, feel free to reach out to us.</p>
-        <button className="cta-button">Contact Us</button>
+        <button size="large" className="cta-button">Contact Us</button>
       </div>
     </section>
   );

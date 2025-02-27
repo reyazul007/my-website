@@ -9,7 +9,7 @@ const Home = () => {
         <p>
           Himalayan Java Coffee Beans are grown locally and are roasted to perfection in the ideal Himalayan air. It is then packaged immediately and rushed off to our outlets, ensuring we deliver the best coffee experience possible for all of our customers.
         </p>
-        <button className="custom-button">See Menu</button>
+        <button size="large" className="custom-button">See Menu</button>
           {/* Social Media Icons */}
                 <div className="social-media">
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

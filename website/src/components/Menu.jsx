@@ -1,21 +1,21 @@
 import React from 'react';
 
 const menuItems = [
-  { name: "Americano", price: 150 },
-  { name: "Cappuccino", price: 185 },
-  { name: "Cafe Latte with Cookie", price: 365 },
-  { name: "Rolls", price: "Lorem, ipaʊsm, lɒr" },
-  { name: "Iced Americano", price: 195 },
-  { name: "Blended Mocha", price: 315 },
-  { name: "Caffe Latte", price: 180 },
-  { name: "Croissant", price: 120 },
-  { name: "Cheese Cake", price: 300 },
-  { name: "Flat White", price: 195 },
-  { name: "Blended Frappe", price: 280 },
-  { name: "Milk Tea", price: 80 },
-  { name: "Baguette", price: 120 },
-  { name: "Brownie with Ice Cream", price: 280 },
-  { name: "Matcha Latte", price: 350 },
+  { name: "Americano", price: 150, image: "/images/americano.jpg" },
+  { name: "Cappuccino", price: 185, image: "/images/cappuccino.jpg" },
+  { name: "Cafe Latte with Cookie", price: 365, image: "/images/latte-cookie.jpg" },
+  { name: "Rolls", price: 100, image: "/images/rolls.jpg" },
+  { name: "Iced Americano", price: 195, image: "/images/iced-americano.jpg" },
+  { name: "Blended Mocha", price: 315, image: "/images/blended-mocha.jpg" },
+  { name: "Caffe Latte", price: 180, image: "/images/caffe-latte.jpg" },
+  { name: "Croissant", price: 120, image: "/images/croissant.jpg" },
+  { name: "Cheese Cake", price: 300, image: "/images/cheesecake.jpg" },
+  { name: "Flat White", price: 195, image: "/images/flat-white.jpg" },
+  { name: "Blended Frappe", price: 280, image: "/images/blended-frappe.jpg" },
+  { name: "Milk Tea", price: 80, image: "/images/milk-tea.jpg" },
+  { name: "Baguette", price: 120, image: "/images/baguette.jpg" },
+  { name: "Brownie with Ice Cream", price: 280, image: "/images/brownie-icecream.jpg" },
+  { name: "Matcha Latte", price: 350, image: "/images/matcha-latte.jpg" },
 ];
 
 const Menu = () => {
@@ -29,8 +29,13 @@ const Menu = () => {
       <div className="menu-items">
         {menuItems.map((item, index) => (
           <div key={index} className="menu-card">
-            <h3>{item.name}</h3>
-            <p>{typeof item.price === 'number' ? `Rs ${item.price}` : item.price}</p>
+            <div className="menu-card-image">
+              <img src={item.image} alt={item.name} />
+            </div>
+            <div className="menu-card-content">
+              <h3>{item.name}</h3>
+              <p>Rs {item.price}</p>
+            </div>
           </div>
         ))}
       </div>
