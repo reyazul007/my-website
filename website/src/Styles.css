@@ -19,56 +19,9 @@ body {
   overflow: hidden;
 }
 
-.header-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.header-background img {
-  width: 100%;
-  height: 100%;
-  padding-left: 60%;
-  padding-bottom: 100%;
-}
-
-.header-content {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.navbar ul li button {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
 
 .navbar ul li button:hover {
   color:  #6f4e37;
-}
-
-.social-media {
-  display: flex;
-  gap: 1rem;
 }
 
 .social-media a {
@@ -279,28 +232,30 @@ body {
 }
 
 /* Service Section Layout */
-.service-section {
-  margin-bottom: 2rem;
-  text-align: center;
+.all-services{
+  padding-left:60% ;
 }
 
 .service-image img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+  width: 60px;
 }
 
 .service-content h3 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
   color: #333;
 }
 
 .service-content p {
   font-size: 1rem;
   color: #555;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: right;
+  padding-left: 50%;
 }
 
 /* Contact Us Section */
