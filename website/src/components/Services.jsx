@@ -3,10 +3,12 @@ import React from 'react';
 const Services = () => {
   return (
     <section id="services" className="services">
-      <h2>Our Services</h2>
-      <p>
-        The Coffee House offers its customers the best-tasting coffee beverages in the country. We have achieved this by using high-quality ingredients and strictly following preparation guidelines.
-      </p>
+      <div className="services-header">
+        <h2>Our Services</h2>
+        <p>
+          The Coffee House offers its customers the best-tasting coffee beverages in the country. We have achieved this by using high-quality ingredients and strictly following preparation guidelines.
+        </p>
+      </div>
 
       <div className="services-grid">
         {/* Nepali Coffee Beans Section */}

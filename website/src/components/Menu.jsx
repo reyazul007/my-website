@@ -25,7 +25,7 @@ const Menu = () => {
     setShowAll(!showAll);
   };
 
-  const itemsToShow = showAll ? menuItems : menuItems.slice(0, 10);
+  const itemsToShow = showAll ? menuItems : menuItems.slice(0, 8);
 
   return (
     <section id="menu" className="menu">

@@ -9,7 +9,8 @@ body {
 /* Header Styles */
 .header {
   position: relative;
-  height: 100vh;
+  background-image: url('C:\Users\Reyazul Ansari\Downloads\my-website\website\public\images\back.jpeg');
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,6 +82,7 @@ body {
 .hero-content {
   max-width: 800px;
   margin-bottom: 2rem;
+  text-Align: 'left' 
 
 }
 
@@ -102,26 +104,22 @@ body {
 .stats {
   display: flex;
   justify-content: space-around;
-  gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .stat-card {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-  padding: 1rem;
-  border-radius: 8px;
-  color: #333;
-  text-align: center;
+  display: flex;
+  
 }
 
 .stat-card h2 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5%;
 }
 
 .stat-card p {
   font-size: 1rem;
-  color: #555;
+  color: #f7f7f7;
 }
 
 /* Social Media Icons */
@@ -231,6 +229,11 @@ body {
   margin-bottom: 2rem;
 }
 
+.services-header {
+  text-align: left;
+  padding-left: 2rem;
+}
+
 /* Service Section Layout */
 .all-services{
   padding-left:60% ;
@@ -297,7 +300,6 @@ body {
 .contact {
   padding: 2rem;
   background-color: #f9f9f9;
-  background-image: url('\images\coffee-beans.jpeg');
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -458,6 +460,12 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover */
+}
+
+.outlet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Outlet Image */
@@ -521,8 +529,8 @@ body {
 /* Menu Items Grid */
 .menu-items {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem 0rem;
   justify-content: center;
   padding: 1rem;
 }
@@ -538,24 +546,17 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
   max-width: 200px;
-  max-height: 84px;
+  max-height: 100px;
 }
 
 .menu-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .menu-card-image {
-  flex: 0 0 80px;
-  height: 84px;
+  height: 100px;
   overflow: hidden;
-}
-
-.menu-card-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .menu-card-content {
