@@ -1,28 +1,32 @@
 import React from 'react';
 
-
-const menuItems = [
-  { name: "Patan Durbar Square", image: "/images/Patan.jpg" },
-  { name: "Lakeside, Pokhara", image: "/images/Pokhara.jpg" },
-  { name: "Mandala Street", image: "/images/Mandala.jpg" },
-  { name: "Namche Bazar", image: "/images/Namche.jpg" },
-  { name: "Boudhanath Stupa", image: "/images/Boudhanath.jpg" },
-  { name: "Pashupatinath Marg", image: "/images/Pashupatinath.jpg" },
-  { name: "Thamel", image: "/images/Thamel.jpeg" },
-  { name: "Basantpur", image: "/images/Basantpur.jpg" },
+const outlets = [
+  { name: "Patan Durbar Square", image: "/images/outlets//Patan.jpg" },
+  { name: "Lakeside, Pokhara", image: "/images/outlets//Pokhara.jpg" },
+  { name: "Mandala Street", image: "/images/outlets//Mandala.jpg" },
+  { name: "Namche Bazar", image: "/images/outlets//Namche.jpg" },
+  { name: "Boudhanath Stupa", image: "/images/outlets//Boudhanath.jpg" },
+  { name: "Pashupatinath Marg", image: "/images/outlets//Pashupatinath.jpg" },
+  { name: "Thamel", image: "/images/outlets//Thamel.jpeg" },
+  { name: "Basantapur", image: "/images/outlets//Basantpur.jpg" },
 ];
 
 const Outlet = () => {
   return (
     <section id="outlet" className="outlet">
-      <h2 className="col-md-12">Find Us</h2>
-      <p> Himalayan Java outlets are available with the best coffee throughout the major cities of Nepal.
+      <h2>Find Us</h2>
+      <p>
+        The Coffee House outlets are available with the best coffee throughout the major cities of Nepal.
       </p>
       <div className="outlet-items">
-        {menuItems.map((item, index) => (
+        {outlets.map((outlet, index) => (
           <div key={index} className="outlet-card">
-            <img src={item.image} alt={item.name} />
-            <h3>{item.name}</h3>
+            <div className="outlet-image">
+              <img src={outlet.image} alt={outlet.name} />
+            </div>
+            <div className="outlet-content">
+              <h3>{outlet.name}</h3>
+            </div>
           </div>
         ))}
       </div>

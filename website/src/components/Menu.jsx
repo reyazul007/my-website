@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
 const menuItems = [
-  { name: "Americano", price: 150, image: "/images/americano.jpg" },
-  { name: "Cappuccino", price: 185, image: "/images/cappuccino.jpg" },
-  { name: "Cafe Latte with Cookie", price: 365, image: "/images/latte-cookie.jpg" },
-  { name: "Rolls", price: 100, image: "/images/rolls.jpg" },
-  { name: "Iced Americano", price: 195, image: "/images/iced-americano.jpg" },
-  { name: "Blended Mocha", price: 315, image: "/images/blended-mocha.jpg" },
-  { name: "Caffe Latte", price: 180, image: "/images/caffe-latte.jpg" },
-  { name: "Croissant", price: 120, image: "/images/croissant.jpg" },
-  { name: "Cheese Cake", price: 300, image: "/images/cheesecake.jpg" },
-  { name: "Flat White", price: 195, image: "/images/flat-white.jpg" },
-  { name: "Blended Frappe", price: 280, image: "/images/blended-frappe.jpg" },
-  { name: "Milk Tea", price: 80, image: "/images/milk-tea.jpg" },
-  { name: "Baguette", price: 120, image: "/images/baguette.jpg" },
-  { name: "Brownie with Ice Cream", price: 280, image: "/images/brownie-icecream.jpg" },
-  { name: "Matcha Latte", price: 350, image: "/images/matcha-latte.jpg" },
+  { name: "Americano", price: 150, image: "/images/menu/menu-1.jpg" },
+  { name: "Cappuccino", price: 185, image: "/images/menu/menu-2.jpg" },
+  { name: "Cafe Latte with Cookie", price: 365, image: "/images/menu/menu-3.jpg" },
+  { name: "Rolls", price: 100, image: "/images/menu/menu-4.jpg" },
+  { name: "Iced Americano", price: 195, image: "/images/menu/menu-5.jpg" },
+  { name: "Blended Mocha", price: 315, image: "/images/menu/menu-6.jpg" },
+  { name: "Caffe Latte", price: 180, image: "/images/menu/menu-7.jpg" },
+  { name: "Croissant", price: 120, image: "/images/menu/menu-8.jpg" },
+  { name: "Cheese Cake", price: 300, image: "/images/menu/menu-9.jpg" },
+  { name: "Flat White", price: 195, image: "/images/menu/menu-10.jpg" },
+  { name: "Blended Frappe", price: 280, image: "/images/menu/menu-11.jpg" },
+  { name: "Milk Tea", price: 80, image: "/images/menu/menu-12.jpg" },
+  { name: "Baguette", price: 120, image: "/images/menu/menu-13.jpg" },
+  { name: "Brownie with Ice Cream", price: 280, image: "/images/menu/menu-14.jpg" },
+  { name: "Matcha Latte", price: 350, image: "/images/menu/menu-15.jpg" },
 ];
 
 const Menu = () => {

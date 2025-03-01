@@ -1,30 +1,25 @@
 import React, { useRef } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './components/Home';
 import About from './components/About';
 import Services from './components/Services';
 import Outlet from './components/Outlet';
-import Menu from './components/Menu'; // Import the Menu component
+import Menu from './components/Menu';
 import Trainings from './components/Trainings';
 import Contact from './components/Contact';
 import './styles.css';
 
 function App() {
-  const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const outletRef = useRef(null);
-  const menuRef = useRef(null); // Add ref for Menu section
+  const menuRef = useRef(null);
   const trainingsRef = useRef(null);
   const contactRef = useRef(null);
 
   const scrollToSection = (section) => {
     let ref;
     switch (section) {
-      case 'home':
-        ref = homeRef;
-        break;
       case 'about':
         ref = aboutRef;
         break;
@@ -34,7 +29,7 @@ function App() {
       case 'outlet':
         ref = outletRef;
         break;
-      case 'menu': // Add case for Menu section
+      case 'menu':
         ref = menuRef;
         break;
       case 'trainings':
@@ -44,7 +39,7 @@ function App() {
         ref = contactRef;
         break;
       default:
-        ref = homeRef;
+        ref = aboutRef;
     }
     ref.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -52,9 +47,6 @@ function App() {
   return (
     <div className="app">
       <Header scrollToSection={scrollToSection} />
-      <div ref={homeRef}>
-        <Home />
-      </div>
       <div ref={aboutRef}>
         <About />
       </div>
@@ -64,7 +56,7 @@ function App() {
       <div ref={outletRef}>
         <Outlet />
       </div>
-      <div ref={menuRef}> {/* Add Menu section */}
+      <div ref={menuRef}>
         <Menu />
       </div>
       <div ref={trainingsRef}>

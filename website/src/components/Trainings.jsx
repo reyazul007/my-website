@@ -3,10 +3,23 @@ import React from 'react';
 const Trainings = () => {
   return (
     <section id="trainings" className="trainings">
-      <h2>Trainings</h2>
-      <p>
-        Our Barista Training School offers comprehensive courses to help you master the art of coffee making. Whether you're a beginner or an experienced barista, we have something for everyone.
-      </p>
+      <div className="training-content">
+        {/* Review Content */}
+        <p className="review-text">
+          The Coffee House Coffee house had the best coffee around Pokhara. The shop is quiet, clean and has an outdoor sitting area to enjoy your coffee and people watch. The staff are very friendly and very helpful. The muffins here are also very good.
+        </p>
+
+        {/* Author Information */}
+        <div className="author-info">
+          <div className="author-image">
+            <img src="/images/sample.jpg" alt="Jhon Doe" />
+          </div>
+          <div className="author-details">
+            <h3>Jhon Doe</h3>
+            <p>Student</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
