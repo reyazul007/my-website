@@ -3,38 +3,54 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color:transparent;
+
   
 }
 /* Header Styles */
 .header {
-  position: relative;
-  background-image: url('C:\Users\Reyazul Ansari\Downloads\my-website\website\public\images\back.jpeg');
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   color: #fff;
-  text-align: center;
+  position: relative;
   overflow: hidden;
 }
 
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%; /* Adjust width to accommodate all slides */
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  animation: slideShow 9s infinite; /* Total duration for 3 slides, each showing for 3 seconds */
+}
+
+.slide {
+  width: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slideShow {
+  0% { transform: translateX(0); }
+  22.22% { transform: translateX(0); }
+  33.33% { transform: translateX(-100%); }
+  55.55% { transform: translateX(-100%); }
+  66.66% { transform: translateX(-200%); }
+  88.88% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
 
 .navbar ul li button:hover {
   color:  #6f4e37;
 }
-
-.social-media a {
-  color: #fff;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-media a:hover {
-  color:  #6f4e37;
-}
-
 
 
 /* Navigation Bar */
@@ -75,15 +91,13 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
+  text-align: left;
   justify-content: center;
-  align-items:center;
 }
 
 .hero-content {
   max-width: 800px;
   margin-bottom: 2rem;
-  text-Align: 'left' 
-
 }
 
 .hero-content h1 {
@@ -103,23 +117,18 @@ body {
 /* Stats Section */
 .stats {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end; /* Move to the right side */
   margin-top: 2rem;
+  padding-right: 2rem; /* Add padding to the right */
+  
 }
 
 .stat-card {
   display: flex;
-  
-}
-
-.stat-card h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5%;
-}
-
-.stat-card p {
-  font-size: 1rem;
-  color: #f7f7f7;
+  flex-direction: row;
+  align-items: center;
+  background-color: #4c3d2f;
+  color: #fff; 
 }
 
 /* Social Media Icons */
@@ -135,6 +144,15 @@ body {
   color: #fff;
   font-size: 1.5rem;
   transition: color 0.3s ease;
+}
+.social-media a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color:  #6f4e37;
 }
 
 
@@ -188,12 +206,6 @@ body {
 
 .custom-button:hover {
   background-color: #473223;
-}
-
-.stats {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2rem;
 }
 
 .stat-card {

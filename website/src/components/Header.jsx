@@ -3,6 +3,19 @@ import React from 'react';
 const Header = ({ scrollToSection }) => {
   return (
     <header className="header">
+      {/* Slideshow */}
+      <div className="slideshow">
+        <div className="slide">
+          <img src="\images\back.jpeg" alt="Slide 1" />
+        </div>
+        <div className="slide">
+          <img src="\images\coffee-beans.jpeg" alt="Slide 2" />
+        </div>
+        <div className="slide">
+          <img src="\images\head-bg.jpg" alt="Slide 3" />
+        </div>
+      </div>
+
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="logo">
@@ -18,28 +31,25 @@ const Header = ({ scrollToSection }) => {
 
       {/* Hero Section */}
       <div className="hero">
-        <div className="hero-content" style={{ textAlign: 'left' }}>
+        <div className="hero-content">
           <h1>From Crop to Cup</h1>
           <p>
             The Coffee House Beans are grown locally and are roasted to perfection in the ideal Himalayan air. It is then packaged immediately and rushed off to our outlets, ensuring we deliver the best coffee experience possible for all of our customers.
           </p>
           <button className="cta-button">See Menu</button>
         </div>
+      </div>
 
-        {/* Stats Section */}
-        <div className="stats">
-          <div className="stat-card">
-            <h2>7+</h2>
-            <p>Years of Experience</p>
-          </div>
-          <div className="stat-card">
-            <h2>25k+</h2>
-            <p>Coffee Consumed</p>
-          </div>
-          <div className="stat-card">
-            <h2>35k+</h2>
-            <p>Happy Customers</p>
-          </div>
+      {/* Stats Section */}
+      <div className="stats">
+        <div className="stat-card">
+          <h2>7+ <sub>Years of Experience</sub></h2>
+        </div>
+        <div className="stat-card">
+          <h2>25k+<sub>Coffee Consumed</sub></h2>
+        </div>
+        <div className="stat-card">
+          <h2>35k+<sub>Happy Customers</sub></h2>
         </div>
       </div>
     </header>
