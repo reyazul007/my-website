@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Services = () => {
+const Services = ({ scrollToSection }) => {
   return (
     <section id="services" className="services">
       <div className="services-header">
@@ -60,7 +60,7 @@ const Services = () => {
       <div className="contact-section">
         <h3>Contact Us</h3>
         <p>For more information about our services, feel free to reach out to us.</p>
-        <button size="large" className="cta-button">Contact Us</button>
+        <button className="button" onClick={() => scrollToSection('contact')}>Contact Us</button>
       </div>
     </section>
   );

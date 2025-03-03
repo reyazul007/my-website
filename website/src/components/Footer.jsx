@@ -7,6 +7,7 @@ const Footer = () => {
       <p>&copy; 2023 The Coffee House. All rights reserved.</p>
       {/* Social Media Icons */}
       <div className="social-media">
+      <p>For more information about ourproduct and services, feel free to reach out to us on.</p>
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebook className="social-icon" />
         </a>
