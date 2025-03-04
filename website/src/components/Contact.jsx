@@ -10,7 +10,7 @@ const Contact = () => {
           <p>Tridevi Marg, Thamel</p>
           <p>Kathmandu, Nepal</p>
           <p>Email: <a href="mailto:info@coffeehouse.com">info@coffeehouse.com</a></p>
-          <p>Phone: <a href="tel:+977-1-4435171">+977-[0]-4435171</a></p>
+          <p>Phone: <a href="tel:+977-1-4435171">+977-01-4435171</a></p>
         </div>
 
         {/* Quick Links */}

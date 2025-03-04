@@ -341,53 +341,47 @@ body {
   border-radius: 8px;
 }
 /* Training Section */
-.trainings {
-  padding: 2rem;
-  background-color: #f9f9f9;
+.review-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
   text-align: center;
 }
 
-.training-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.review-text {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-/* Author Information */
-.author-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.author-image img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+.review-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
   object-fit: cover;
 }
 
-.author-details h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.reviewer-name {
+  font-size: 1.2rem;
+  font-weight: bold;
   color: #333;
 }
 
-.author-details p {
-  font-size: 1rem;
-  color: #555;
+.reviewer-occupation {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
 }
+
+.review-stars {
+  font-size: 1.1rem;
+  color: #f4b400;
+  margin-bottom: 10px;
+}
+
+.review-content {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
 
 /* Outlet Section */
 .outlet {
